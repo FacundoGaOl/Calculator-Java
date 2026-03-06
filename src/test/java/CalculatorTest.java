@@ -1,4 +1,3 @@
-
 import org.example.Calculator.Calculator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,6 +16,7 @@ public class CalculatorTest {
         assertEquals(expectedOutput, Calculator.sum(numberOne, numberTwo));
         assertNotEquals(4,Calculator.sum(numberOne, numberTwo));
     }
+
     @ParameterizedTest
     @CsvSource ({
             "1,2, -1",
@@ -32,13 +32,14 @@ public class CalculatorTest {
             "2,-4, -8",
             "2,0, 0",
     })
+
     void check_numberOne_multiply_numberTwo(float numberOne, float numberTwo, float expectedOutput){
         assertEquals(expectedOutput, Calculator.multiply(numberOne,numberTwo));
     }
     @ParameterizedTest
     @CsvSource({
             "2,2, 1",
-            "4,0, 1",
+            "4,0, Infinity",
             "21,5, 4.2"
     })
     void check_numberTwo_divide_numberOne(float numberOne, float numberTwo, float expectedOutput){
