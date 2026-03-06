@@ -29,10 +29,20 @@ public class CalculatorTest {
     @ParameterizedTest
     @CsvSource({
             "2,3, 6",
-            "2,-4, -8"
+            "2,-4, -8",
+            "2,0, 0",
     })
     void check_numberOne_multiply_numberTwo(float numberOne, float numberTwo, float expectedOutput){
         assertEquals(expectedOutput, Calculator.multiply(numberOne,numberTwo));
+    }
+    @ParameterizedTest
+    @CsvSource({
+            "2,2, 1",
+            "4,0, 1",
+            "21,5, 4.2"
+    })
+    void check_numberTwo_divide_numberOne(float numberOne, float numberTwo, float expectedOutput){
+        assertEquals(expectedOutput, Calculator.divide(numberOne, numberTwo));
     }
 }
 
