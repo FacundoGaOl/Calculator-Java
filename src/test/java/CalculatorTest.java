@@ -20,10 +20,19 @@ public class CalculatorTest {
     @ParameterizedTest
     @CsvSource ({
             "1,2, -1",
-            "4,5, -1",
+            "4,2, 2",
     })
-    void check_substract_numberOne_numberTwo(float numberOne, float numberTwo, float expectedOutput){
-        assertEquals(expectedOutput, Calculator.substrac(numberOne,numberTwo));
+    void check_subtract_numberOne_numberTwo(float numberOne, float numberTwo, float expectedOutput){
+        assertEquals(expectedOutput, Calculator.subtrac(numberOne,numberTwo));
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "2,3, 6",
+            "2,-4, -8"
+    })
+    void check_numberOne_multiply_numberTwo(float numberOne, float numberTwo, float expectedOutput){
+        assertEquals(expectedOutput, Calculator.multiply(numberOne,numberTwo));
     }
 }
 
