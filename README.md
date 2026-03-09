@@ -29,11 +29,11 @@ Tipos de Tests realizados:
 ## 🏗️ Arquitectura y Principios SOLID
 El código ha sido estructurado siguiendo buenas prácticas de ingeniería de software:
 
-**S (Single Responsibility):**![Captura de pantalla 2026-03-09 134905.png](src/main/java/images/Captura%20de%20pantalla%202026-03-09%20134905.png) La clase Calculator se encarga exclusivamente del cálculo, mientras que Main se encarga de la interacción y CalculatorTest de la validación.
+**S (Single Responsibility):** La clase Calculator se encarga exclusivamente del cálculo, mientras que Main se encarga de la interacción y CalculatorTest de la validación.
 
-**![Captura de pantalla 2026-03-09 134905.png](src/main/java/images/Captura%20de%20pantalla%202026-03-09%20134905.png)Naming Profesional:**![Captura de pantalla 2026-03-09 134905.png](src/main/java/images/Captura%20de%20pantalla%202026-03-09%20134905.png) Métodos nombrados bajo el estándar should_behavior_when_condition.
+**Naming Profesional:** Métodos nombrados bajo el estándar should_behavior_when_condition.
 
-**![Captura de pantalla 2026-03-09 134905.png](src/main/java/images/Captura%20de%20pantalla%202026-03-09%20134905.png)Encapsulamiento:**![Captura de pantalla 2026-03-09 134905.png](src/main/java/images/Captura%20de%20pantalla%202026-03-09%20134905.png) Métodos públicos y estáticos para facilitar el acceso sin necesidad de instanciación innecesaria.
+**Encapsulamiento:** Métodos públicos y estáticos para facilitar el acceso sin necesidad de instanciación innecesaria.
 
 ## 💻 Ejecución
 Para ejecutar el programa y ver la demostración en consola:
