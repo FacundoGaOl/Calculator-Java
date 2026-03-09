@@ -11,6 +11,9 @@ public class Calculator {
         return numberOne*numberTwo;
     }
     public static float divide (float numberOne, float numberTwo){
+        if (numberTwo == 0) {
+            System.out.println("Error: No puedes dividir por cero.");
+            return 0;}
         return numberOne/numberTwo;
     }
 }
